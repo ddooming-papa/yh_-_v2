@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>보안 침해사고 대응 · 조영현 포트폴리오</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</head>
+<body class="project-page">
+
+  <nav class="nav scrolled" id="nav">
+    <a href="../index.html" class="nav__logo">YH.</a>
+    <a href="../index.html#projects" class="nav__back">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      프로젝트 목록
+    </a>
+  </nav>
+
+  <div class="project-hero">
+    <div class="container">
+      <a href="../index.html#projects" class="project-back">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        프로젝트 목록으로
+      </a>
+      <div class="project-meta-row">
+        <span class="project-meta-item is-company">동화기업</span>
+        <span class="project-meta-item">2024.01 — 2024.03</span>
+        <span class="project-meta-item">보안 사고 대응</span>
+      </div>
+      <h1 class="project-title-h1">보안 침해사고 대응 및<br>재발 방지 인프라 구축</h1>
+      <p class="project-role-text">역할: 보안 침해사고 대응 및 재발 방지 인프라 구축 담당</p>
+    </div>
+  </div>
+
+  <div class="project-body">
+    <div class="container">
+
+      <div class="project-section">
+        <h2 class="project-section-title">사고 배경 및 개요</h2>
+        <p>2024년 초 외부 공격자에 의한 보안 침해사고가 발생했습니다. AD(Active Directory) 정책 마비로 인해 전사 도메인 PC의 통신 장애가 발생하고, 이로 인해 생산 공정이 전면 중단되는 심각한 상황이었습니다.</p>
+        <p>외부 보안 업체 지원 없이, 내부 자체 대응만으로 서비스를 정상화하고 생산 공정을 복구했습니다. 이후 침해 경로 분석을 통해 인프라 구조를 개선하고, 재발 방지 중심의 보안 운영 체계를 수립했습니다.</p>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">주요 수행 내용</h2>
+        <ul class="project-list">
+          <li><strong>침해사고 대응 및 서비스 복구:</strong> 서버·계정·네트워크 복구를 통한 전사 서비스 정상화, 생산 공정 재개</li>
+          <li><strong>AD 인프라 구조 개선:</strong> 주 공격 대상이었던 AD 가상 서버를 물리 서버 기반으로 전환, Active-Active Sync 구성으로 고가용성 확보</li>
+          <li><strong>AD 운영 기준 정립:</strong> 국내/외 사용자 AD 계정 운영 기준 및 가입 가이드 정립</li>
+          <li><strong>서버 접근제어 구축:</strong> 서버 접근제어 솔루션 신규 도입 및 운영으로 RDP 및 서버 간 비인가 접근 경로 차단</li>
+          <li><strong>해킹 경로 분석:</strong> 침해 경로(RDP, 서버 간 접근) 분석 및 취약 구조 개선</li>
+          <li><strong>보안 운영 체계 강화:</strong> 인프라·계정·접근 영역 보안 통제 강화, 재발 방지를 위한 운영 프로세스 개선</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">Before / After</h2>
+        <table class="tech-table">
+          <tbody>
+            <tr><th>침해 전 상태</th><td>AD 가상 서버 단일 구성, RDP 접근 경로 노출, 서버 간 이동(lateral movement) 차단 미흡</td></tr>
+            <tr><th>대응 활동</th><td>서버·계정·네트워크 복구, 접근제어 솔루션 도입, AD 물리 이중화 전환, 취약 구조 개선</td></tr>
+            <tr><th>개선 결과</th><td>전사 서비스 정상화, AD 물리 이중화, RDP·lateral movement 차단, 보안 운영 프로세스 확립</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">기술 스택</h2>
+        <table class="tech-table">
+          <tbody>
+            <tr><th>AD 인프라</th><td>Active Directory (물리 서버 기반, Active-Active Sync)</td></tr>
+            <tr><th>접근 제어</th><td>서버 접근제어 솔루션 (PAM)</td></tr>
+            <tr><th>네트워크</th><td>방화벽 정책 강화, RDP 접근 경로 차단</td></tr>
+            <tr><th>서버</th><td>Windows Server (물리 서버 전환)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">핵심 성과</h2>
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <div class="achievement-card__metric">자체 복구</div>
+            <div class="achievement-card__desc">외부 공격자 요구 없이, 내부 대응만으로 침해사고 완전 복구 및 생산 공정 재개</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-card__metric">물리 이중화</div>
+            <div class="achievement-card__desc">AD 인프라 물리 서버 전환 및 Active-Active 이중화로 서비스 안정성과 보안성 동시 확보</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-card__metric">접근 차단</div>
+            <div class="achievement-card__desc">서버 접근제어 도입으로 RDP 및 서버 간 비인가 접근 경로 완전 차단</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-card__metric">재발 방지</div>
+            <div class="achievement-card__desc">침해 경로 기반 보안 운영 체계 재정립, 재발 방지 중심의 인프라·계정·접근 통제 구축</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="project-nav-bar">
+      <a href="p3-ksm-security.html">← KSM 그룹 보안 솔루션 통합</a>
+      <a href="../index.html#projects" class="all-link">전체 목록</a>
+      <a href="p5-monitoring.html">통합 모니터링 구축 →</a>
+    </div>
+  </div>
+
+  <footer class="footer proj-footer">
+    <p class="footer__copy">© 2025 조영현. All rights reserved.</p>
+    <p class="footer__credit">Hybrid Infrastructure &amp; Cloud Engineer</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

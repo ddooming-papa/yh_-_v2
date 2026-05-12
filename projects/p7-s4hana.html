@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S4HANA 고도화 AWS 인프라 지원 · 조영현 포트폴리오</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</head>
+<body class="project-page">
+
+  <nav class="nav scrolled" id="nav">
+    <a href="../index.html" class="nav__logo">YH.</a>
+    <a href="../index.html#projects" class="nav__back">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      프로젝트 목록
+    </a>
+  </nav>
+
+  <div class="project-hero">
+    <div class="container">
+      <a href="../index.html#projects" class="project-back">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        프로젝트 목록으로
+      </a>
+      <div class="project-meta-row">
+        <span class="project-meta-item is-company">동화기업</span>
+        <span class="project-meta-item">2022.03 — 현재</span>
+        <span class="project-meta-item">AWS / SAP</span>
+      </div>
+      <h1 class="project-title-h1">S4HANA 고도화<br>AWS 인프라 지원</h1>
+      <p class="project-role-text">역할: SAP ERP 고도화 프로젝트 AWS 인프라 지원 담당</p>
+    </div>
+  </div>
+
+  <div class="project-body">
+    <div class="container">
+
+      <div class="project-section">
+        <h2 class="project-section-title">프로젝트 개요</h2>
+        <p>동화기업의 기존 SAP ECC 시스템을 S/4HANA로 고도화하는 대규모 ERP 전환 프로젝트에서 AWS 인프라 지원을 담당했습니다.</p>
+        <p>S4HANA 고도화 전환 기간 동안 AWS 인프라를 안정적으로 지원하고, ERP 관통 테스트 환경 구성 및 반복 테스트를 효율적으로 지원하기 위한 EC2 스냅샷 기반 백업·복구 자동화와 RDS Aurora PostgreSQL 운영을 수행했습니다.</p>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">주요 수행 내용</h2>
+        <ul class="project-list">
+          <li><strong>AWS 인프라 지원:</strong> S4HANA 고도화 전환 기간 중 AWS 인프라 지원 및 운영 안정화</li>
+          <li><strong>ERP 관통 테스트 환경:</strong> ERP 관통 테스트 환경 구성 및 반복 테스트 지원</li>
+          <li><strong>EC2 백업·복구 프로세스:</strong> 테스트용 EC2 이미지 백업·복구 프로세스 수립</li>
+          <li><strong>스냅샷 정책 자동화:</strong> EC2 스냅샷 정책 설계 및 관리 자동화로 테스트 환경 신속 복원</li>
+          <li><strong>RDS 운영:</strong> RDS Aurora PostgreSQL 운영 및 성능 모니터링</li>
+          <li><strong>DB 복제 및 초기화:</strong> 테스트 환경 DB 복제 및 초기화 프로세스 운영으로 반복 테스트 사이클 단축</li>
+          <li><strong>모니터링:</strong> CloudWatch, CloudTrail 기반 인프라 상태 모니터링</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">기술 스택</h2>
+        <table class="tech-table">
+          <tbody>
+            <tr><th>클라우드</th><td>AWS</td></tr>
+            <tr><th>DB</th><td>RDS Aurora PostgreSQL</td></tr>
+            <tr><th>컴퓨트</th><td>EC2 (스냅샷 기반 백업·복구)</td></tr>
+            <tr><th>모니터링</th><td>CloudWatch, CloudTrail</td></tr>
+            <tr><th>보안</th><td>Inspector, GuardDuty</td></tr>
+            <tr><th>서버 OS</th><td>Linux, Windows Server</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">핵심 성과</h2>
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <div class="achievement-card__metric">ERP 전환</div>
+            <div class="achievement-card__desc">SAP ECC → S/4HANA 고도화 프로젝트 AWS 인프라 지원으로 ERP 전환 안정성 기여</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-card__metric">신속 복원</div>
+            <div class="achievement-card__desc">EC2 스냅샷 기반 백업·복구 체계 구축으로 테스트 환경 신속 복원 가능</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-card__metric">자동화</div>
+            <div class="achievement-card__desc">반복 테스트 환경 자동화(스냅샷 정책, DB 초기화)로 테스트 사이클 단축 및 운영 효율화</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-card__metric">안정 운영</div>
+            <div class="achievement-card__desc">Aurora PostgreSQL 운영 및 성능 모니터링으로 ERP 전환 기간 DB 안정성 확보</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="project-nav-bar">
+      <a href="p6-aws-dr.html">← AWS MGN DR 구성</a>
+      <a href="../index.html#projects" class="all-link">전체 목록</a>
+      <a href="p8-itsm.html">ITSM AWS 인프라 아키텍처 →</a>
+    </div>
+  </div>
+
+  <footer class="footer proj-footer">
+    <p class="footer__copy">© 2025 조영현. All rights reserved.</p>
+    <p class="footer__credit">Hybrid Infrastructure &amp; Cloud Engineer</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

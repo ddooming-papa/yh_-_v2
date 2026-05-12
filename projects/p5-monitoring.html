@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>통합 모니터링 구축 · 조영현 포트폴리오</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</head>
+<body class="project-page">
+
+  <nav class="nav scrolled" id="nav">
+    <a href="../index.html" class="nav__logo">YH.</a>
+    <a href="../index.html#projects" class="nav__back">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      프로젝트 목록
+    </a>
+  </nav>
+
+  <div class="project-hero">
+    <div class="container">
+      <a href="../index.html#projects" class="project-back">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        프로젝트 목록으로
+      </a>
+      <div class="project-meta-row">
+        <span class="project-meta-item is-company">동화기업</span>
+        <span class="project-meta-item">2023.01 — 2023.06</span>
+        <span class="project-meta-item">모니터링 / 자동화</span>
+      </div>
+      <h1 class="project-title-h1">IDC·클라우드<br>통합 모니터링 구축</h1>
+      <p class="project-role-text">역할: 동화그룹 IDC 및 클라우드 통합 모니터링 환경 구축·운영</p>
+    </div>
+  </div>
+
+  <div class="project-body">
+    <div class="container">
+
+      <div class="project-section">
+        <h2 class="project-section-title">프로젝트 개요</h2>
+        <p>기존에는 IDC 서버, AWS, Azure 각각의 모니터링 도구를 개별적으로 확인해야 했습니다. 계정별로 접속하여 현황을 파악하는 방식은 장애 초기 대응 속도를 늦추고 운영 비효율을 야기했습니다.</p>
+        <p>Zabbix와 Grafana를 핵심 도구로, AWS CloudWatch 및 Azure와 연동하여 IDC·온프레미스·멀티클라우드 환경을 단일 대시보드에서 통합 관제할 수 있는 환경을 구축했습니다. 또한 알람 튜닝을 통해 노이즈를 제거하고, 장애 이벤트를 Teams 및 메일로 자동 통보하는 체계를 완성했습니다.</p>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">주요 수행 내용</h2>
+        <ul class="project-list">
+          <li><strong>Zabbix 버전 업그레이드:</strong> v4.4.5 → v6.0.4로 업그레이드, IDC 서버·네트워크 통합 관제 구성</li>
+          <li><strong>Grafana 통합 대시보드:</strong> Grafana와 Zabbix·CloudWatch를 연동하여 멀티클라우드 통합 대시보드 구축</li>
+          <li><strong>멀티클라우드 관제:</strong> AWS CloudWatch·Azure를 Grafana와 연동하여 계정별 개별 접근 없이 전체 현황 즉시 확인 가능</li>
+          <li><strong>알람 체계 개선:</strong> Zabbix 기반 Teams·메일 알람 구성, 포스타 SMS 서비스 대체</li>
+          <li><strong>알람 최적화:</strong> Zabbix 템플릿·Grafana 대시보드 튜닝으로 필수 알람만 수신, 노이즈 제거</li>
+          <li><strong>계정 통합:</strong> Azure AD와 Grafana 연동으로 단일 계정 관리 체계 구축</li>
+          <li><strong>Python 모니터링 스크립트:</strong> 자체 제작 Python 스크립트 기반 보조 모니터링 운영</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">기술 스택</h2>
+        <table class="tech-table">
+          <tbody>
+            <tr><th>모니터링 서버</th><td>Zabbix v6.0.4</td></tr>
+            <tr><th>시각화</th><td>Grafana (Zabbix, CloudWatch, Azure 데이터 소스 연동)</td></tr>
+            <tr><th>클라우드 관제</th><td>AWS CloudWatch, Azure Monitor</td></tr>
+            <tr><th>알람</th><td>Zabbix → Teams / 메일 / SMS 자동 알람</td></tr>
+            <tr><th>계정 통합</th><td>Azure AD + Grafana SSO 연동</td></tr>
+            <tr><th>자동화</th><td>Python (자체 모니터링 스크립트)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">핵심 성과</h2>
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <div class="achievement-card__metric">단일 뷰</div>
+            <div class="achievement-card__desc">IDC·네트워크·AWS·Azure 분산 관제를 단일 Grafana 대시보드로 통합, 관제 소요 시간 단축</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-card__metric">멀티클라우드</div>
+            <div class="achievement-card__desc">AWS·Azure 멀티 클라우드 통합 관제로 계정별 개별 접근 없이 전체 현황 즉시 확인 가능</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-card__metric">노이즈 제거</div>
+            <div class="achievement-card__desc">알람 튜닝을 통한 불필요 알람 제거로 장애 초기 대응 속도 향상</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-card__metric">자동화</div>
+            <div class="achievement-card__desc">Teams·메일·SMS 자동 알람 연동으로 장애 이벤트 실시간 통보 체계 완성</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="project-nav-bar">
+      <a href="p4-security-ir.html">← 보안 침해사고 대응</a>
+      <a href="../index.html#projects" class="all-link">전체 목록</a>
+      <a href="p6-aws-dr.html">AWS MGN DR 구성 →</a>
+    </div>
+  </div>
+
+  <footer class="footer proj-footer">
+    <p class="footer__copy">© 2025 조영현. All rights reserved.</p>
+    <p class="footer__credit">Hybrid Infrastructure &amp; Cloud Engineer</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

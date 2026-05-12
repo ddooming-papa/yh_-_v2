@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>조영현 · Hybrid Infrastructure &amp; Cloud Engineer</title>
+  <meta name="description" content="11년 경력의 하이브리드 인프라·클라우드 전문가. 온프레미스(HCI/VMware), AWS, Azure, M365를 아우르는 인프라 엔지니어 포트폴리오.">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</head>
+<body>
+
+  <!-- ── MOBILE NAV ────────────────────────────────────── -->
+  <header class="mobile-nav" id="mobileNav">
+    <a href="#about" class="mobile-nav__logo">YH.</a>
+    <button class="mobile-nav__hamburger" id="hamburger" aria-label="메뉴 열기">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ── MOBILE MENU ───────────────────────────────────── -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about"      class="mobile-menu__link" data-section="about">About</a>
+    <a href="#skills"     class="mobile-menu__link" data-section="skills">Skills</a>
+    <a href="#experience" class="mobile-menu__link" data-section="experience">Experience</a>
+    <a href="#projects"   class="mobile-menu__link" data-section="projects">Projects</a>
+    <a href="#contact"    class="mobile-menu__link" data-section="contact">Contact</a>
+  </div>
+
+  <!-- ── LAYOUT ────────────────────────────────────────── -->
+  <div class="layout">
+
+    <!-- ── SIDEBAR ─────────────────────────────────────── -->
+    <aside class="sidebar">
+      <div class="sidebar__top">
+        <p class="sidebar__greeting">안녕하세요, 저는</p>
+        <h1 class="sidebar__name">조영현<span class="dot">.</span></h1>
+        <p class="sidebar__title">Hybrid Infrastructure &amp;<br>Cloud Engineer</p>
+        <p class="sidebar__desc">온프레미스부터 클라우드까지, 11년간 기업 IT 인프라의 안정성을 설계하고 지켜왔습니다.</p>
+
+        <nav class="sidebar__nav" id="sidebarNav">
+          <a href="#about" class="sidebar__nav-item active" data-section="about">
+            <span class="sidebar__nav-line"></span>
+            <span class="sidebar__nav-label">About</span>
+          </a>
+          <a href="#skills" class="sidebar__nav-item" data-section="skills">
+            <span class="sidebar__nav-line"></span>
+            <span class="sidebar__nav-label">Skills</span>
+          </a>
+          <a href="#experience" class="sidebar__nav-item" data-section="experience">
+            <span class="sidebar__nav-line"></span>
+            <span class="sidebar__nav-label">Experience</span>
+          </a>
+          <a href="#projects" class="sidebar__nav-item" data-section="projects">
+            <span class="sidebar__nav-line"></span>
+            <span class="sidebar__nav-label">Projects</span>
+          </a>
+          <a href="#contact" class="sidebar__nav-item" data-section="contact">
+            <span class="sidebar__nav-line"></span>
+            <span class="sidebar__nav-label">Contact</span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="sidebar__social">
+        <a href="mailto:Joy8256@naver.com" class="sidebar__social-link">
+          <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+          Joy8256@naver.com
+        </a>
+        <a href="https://github.com" class="sidebar__social-link" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+        <a href="https://linkedin.com" class="sidebar__social-link" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </aside>
+
+    <!-- ── MAIN CONTENT ──────────────────────────────────── -->
+    <main class="main-content">
+
+      <!-- ── ABOUT ─────────────────────────────────────── -->
+      <section class="section" id="about">
+        <div class="section__header">
+          <p class="section__eyebrow">About</p>
+          <h2 class="section__title">기본을 지키며<br>신뢰를 쌓는 엔지니어</h2>
+        </div>
+        <div class="about__body">
+          <p class="fade-up">네트워크 현장 업무부터 제조업 IT 전반 운영, 그리고 현재의 하이브리드 인프라까지 — 다양한 환경에서 시스템이 중단 없이 운영되도록 기본을 지키는 역할에 집중해왔습니다.</p>
+          <p class="fade-up">단기 성과보다 장기적 안정성을 중시하고, 사전 점검과 절차 기반의 운영으로 조직이 믿고 맡길 수 있는 인프라 담당자로 성장해왔습니다.</p>
+          <p class="fade-up">보안 침해 사고 자체 대응, 멀티 클라우드 통합 모니터링 구축, DR 설계 등 단순 운영을 넘어 인프라 전반의 안정성 기준을 만들어가고 있습니다.</p>
+        </div>
+        <div class="about__stats fade-up">
+          <div class="stat">
+            <span class="stat__number">11<span class="accent">+</span></span>
+            <span class="stat__label">년 경력</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">9</span>
+            <span class="stat__label">주요 프로젝트</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">3</span>
+            <span class="stat__label">개사 근무</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">2</span>
+            <span class="stat__label">클라우드 플랫폼</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── SKILLS ─────────────────────────────────────── -->
+      <section class="section" id="skills">
+        <div class="section__header">
+          <p class="section__eyebrow">Skills</p>
+        </div>
+        <div class="skills__grid">
+
+          <div class="skill-card fade-up">
+            <div class="skill-card__header">
+              <span class="skill-card__icon">🖥</span>
+              <h3 class="skill-card__title">On-Premises / Virtualization</h3>
+            </div>
+            <div class="skill-card__tags">
+              <span class="tag">VMware vSphere</span><span class="tag">HCI</span>
+              <span class="tag">Hyper-V</span><span class="tag">Windows Server</span>
+              <span class="tag">Linux</span><span class="tag">IBM Server</span>
+              <span class="tag">NAS / Storage</span><span class="tag">Active Directory</span>
+              <span class="tag">Exchange Server</span>
+            </div>
+          </div>
+
+          <div class="skill-card fade-up">
+            <div class="skill-card__header">
+              <span class="skill-card__icon">☁</span>
+              <h3 class="skill-card__title">Cloud</h3>
+            </div>
+            <div class="skill-card__tags">
+              <span class="tag">AWS EC2 / VPC</span><span class="tag">S3 / EBS / EFS</span>
+              <span class="tag">ECS / Fargate</span><span class="tag">RDS / Aurora</span>
+              <span class="tag">ALB / CDN</span><span class="tag">AWS MGN</span>
+              <span class="tag">Direct Connect</span><span class="tag">Azure</span>
+              <span class="tag">M365</span>
+            </div>
+          </div>
+
+          <div class="skill-card fade-up">
+            <div class="skill-card__header">
+              <span class="skill-card__icon">🌐</span>
+              <h3 class="skill-card__title">Network</h3>
+            </div>
+            <div class="skill-card__tags">
+              <span class="tag">Juniper (JNCIA)</span><span class="tag">Cisco</span>
+              <span class="tag">BGP</span><span class="tag">OSPF / ISIS</span>
+              <span class="tag">Site-to-Site VPN</span><span class="tag">Firewall</span>
+              <span class="tag">L3 Routing</span>
+            </div>
+          </div>
+
+          <div class="skill-card fade-up">
+            <div class="skill-card__header">
+              <span class="skill-card__icon">📊</span>
+              <h3 class="skill-card__title">Monitoring</h3>
+            </div>
+            <div class="skill-card__tags">
+              <span class="tag">Zabbix</span><span class="tag">Grafana</span>
+              <span class="tag">CloudWatch</span><span class="tag">CloudTrail</span>
+              <span class="tag">Teams 알림 연동</span><span class="tag">SMS 알람</span>
+            </div>
+          </div>
+
+          <div class="skill-card fade-up">
+            <div class="skill-card__header">
+              <span class="skill-card__icon">🔒</span>
+              <h3 class="skill-card__title">Security</h3>
+            </div>
+            <div class="skill-card__tags">
+              <span class="tag">WAF / GuardDuty</span><span class="tag">Fasoo DRM</span>
+              <span class="tag">Waterwall DLP</span><span class="tag">MDM</span>
+              <span class="tag">AppCheck</span><span class="tag">서버 접근제어</span>
+              <span class="tag">보안 감사 대응</span>
+            </div>
+          </div>
+
+          <div class="skill-card fade-up">
+            <div class="skill-card__header">
+              <span class="skill-card__icon">⚙</span>
+              <h3 class="skill-card__title">Automation &amp; Tools</h3>
+            </div>
+            <div class="skill-card__tags">
+              <span class="tag">Python</span><span class="tag">AWS CodePipeline</span>
+              <span class="tag">Docker</span><span class="tag">CI/CD</span>
+              <span class="tag">ChatGPT / Copilot</span><span class="tag">Cursor / Gemini</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── EXPERIENCE ──────────────────────────────────── -->
+      <section class="section" id="experience">
+        <div class="section__header">
+          <p class="section__eyebrow">Experience</p>
+        </div>
+        <div class="experience__list">
+
+          <div class="exp-card fade-up">
+            <div class="exp-card__period">2022.03<br>— 현재</div>
+            <div>
+              <div class="exp-card__role">
+                IT인프라팀 과장
+                <span class="exp-card__sep">·</span>
+                <span class="exp-card__company">동화기업</span>
+                <span class="exp-card__duration">현재 재직</span>
+              </div>
+              <p class="exp-card__desc">하이브리드 인프라 환경(온프레미스 + AWS + Azure)을 총괄 운영. IDC 센터 가상화 인프라부터 멀티 클라우드 운영, DR 구성, 통합 모니터링, 보안 대응까지 전 영역 담당.</p>
+              <ul class="exp-card__list">
+                <li>HCI / VMware 기반 가상화 환경 및 IDC 센터 운영</li>
+                <li>AWS (EC2·VPC·RDS·ECS·ALB·MGN·DX) 인프라 운영</li>
+                <li>Azure · M365 (SharePoint·OneDrive·Teams) 서비스 운영</li>
+                <li>Zabbix + Grafana + CloudWatch 통합 모니터링 구축</li>
+                <li>보안 침해사고 자체 대응 및 재발 방지 체계 수립</li>
+                <li>AI 도구 활용 운영 자동화 및 생산성 향상</li>
+              </ul>
+              <div class="exp-card__tags">
+                <span class="tag">VMware</span><span class="tag">AWS</span>
+                <span class="tag">Azure</span><span class="tag">M365</span>
+                <span class="tag">Zabbix</span><span class="tag">Grafana</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-card fade-up">
+            <div class="exp-card__period">2016.10<br>— 2022.02</div>
+            <div>
+              <div class="exp-card__role">
+                IT관리팀 대리
+                <span class="exp-card__sep">·</span>
+                <span class="exp-card__company">한국씰마스타</span>
+                <span class="exp-card__duration">5년 4개월</span>
+              </div>
+              <p class="exp-card__desc">반도체 제조업 (임직원 1,000명) IT 전반을 단일 담당자로 운영. 서버·네트워크·보안·ERP 시스템 구축 및 운영, 외부 보안 감사 대응.</p>
+              <ul class="exp-card__list">
+                <li>AD · Exchange · IBM 서버 구축 및 운영</li>
+                <li>ERP 서버 환경 구성 및 MES 도입 지원 (공정 시스템 120대 연동)</li>
+                <li>전사 보안 솔루션 도입 (DRM · DLP · MDM · AppCheck)</li>
+                <li>삼성 · AMAT · Lam Research 외부 보안 감사 대응</li>
+                <li>물리 서버 30대 → 가상 서버 1대 통합 구축</li>
+              </ul>
+              <div class="exp-card__tags">
+                <span class="tag">Active Directory</span><span class="tag">Exchange</span>
+                <span class="tag">Hyper-V</span><span class="tag">DRM/DLP</span>
+                <span class="tag">MDM</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-card fade-up">
+            <div class="exp-card__period">2014.12<br>— 2016.03</div>
+            <div>
+              <div class="exp-card__role">
+                인프라사업본부 AM
+                <span class="exp-card__sep">·</span>
+                <span class="exp-card__company">아이크래프트</span>
+                <span class="exp-card__duration">1년 4개월</span>
+              </div>
+              <p class="exp-card__desc">KT 코넷망 대상 네트워크 장비 운영 및 유지보수. 백본 L3 라우터 대개체 프로젝트 참여로 대규모 네트워크 변경 실무 경험 확보.</p>
+              <ul class="exp-card__list">
+                <li>Juniper 기반 L3 백본 라우터 구성 및 설정</li>
+                <li>Cisco → Juniper T-Series 업그레이드 작업</li>
+                <li>국내외 주요 국소 10개소 무중단 전환</li>
+                <li>작업 계획서 · Config 문서 · 선번장 작성 및 관리</li>
+              </ul>
+              <div class="exp-card__tags">
+                <span class="tag">Juniper</span><span class="tag">BGP</span>
+                <span class="tag">OSPF</span><span class="tag">ISIS</span>
+                <span class="tag">L3 Routing</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── PROJECTS ────────────────────────────────────── -->
+      <section class="section" id="projects">
+        <div class="section__header">
+          <p class="section__eyebrow">Projects</p>
+        </div>
+        <div class="projects__list">
+
+          <a href="projects/p1-kt-router.html" class="proj-card fade-up">
+            <div class="proj-card__thumb proj-thumb-1"></div>
+            <div>
+              <div class="proj-card__title">
+                KT 코넷망 라우터 대개체
+                <span class="proj-card__company">아이크래프트</span>
+              </div>
+              <p class="proj-card__period">2014.08 — 2016.01</p>
+              <p class="proj-card__desc">Cisco → Juniper L3 백본 라우터 교체. 국내외 10개 국소 무중단 전환 및 200Gbps 업링크 증설.</p>
+              <div class="proj-card__metrics">
+                <span class="metric">10개 국소</span>
+                <span class="metric">200Gbps</span>
+                <span class="metric">무중단 전환</span>
+              </div>
+              <div class="proj-card__tags">
+                <span class="tag">Juniper</span><span class="tag">BGP/OSPF</span><span class="tag">L3 Routing</span>
+              </div>
+              <span class="proj-card__arrow">자세히 보기 →</span>
+            </div>
+          </a>
+
+          <a href="projects/p2-ksm-infra.html" class="proj-card fade-up">
+            <div class="proj-card__thumb proj-thumb-2"></div>
+            <div>
+              <div class="proj-card__title">
+                KSM 그룹 전사 IT 인프라 구축·운영
+                <span class="proj-card__company">한국씰마스타</span>
+              </div>
+              <p class="proj-card__period">2016.12 — 2022.01</p>
+              <p class="proj-card__desc">5개 계열사 IT 인프라 통합 관리. AD 정책 표준화, MES 도입 지원, 물리 서버 가상화 통합.</p>
+              <div class="proj-card__metrics">
+                <span class="metric">5개 법인</span>
+                <span class="metric">30→1대</span>
+                <span class="metric">5년 운영</span>
+              </div>
+              <div class="proj-card__tags">
+                <span class="tag">AD</span><span class="tag">Hyper-V</span><span class="tag">Exchange</span><span class="tag">MES</span>
+              </div>
+              <span class="proj-card__arrow">자세히 보기 →</span>
+            </div>
+          </a>
+
+          <a href="projects/p3-ksm-security.html" class="proj-card fade-up">
+            <div class="proj-card__thumb proj-thumb-3"></div>
+            <div>
+              <div class="proj-card__title">
+                KSM 그룹 전사 보안 솔루션 통합 운영
+                <span class="proj-card__company">한국씰마스타</span>
+              </div>
+              <p class="proj-card__period">2016.12 — 2022.01</p>
+              <p class="proj-card__desc">1,000대 Endpoint 보안 체계 구축. DRM·DLP·MDM·랜섬웨어 대응 및 3계층 백업 구조 설계.</p>
+              <div class="proj-card__metrics">
+                <span class="metric">1,000대+</span>
+                <span class="metric">10종 솔루션</span>
+                <span class="metric">3계층 백업</span>
+              </div>
+              <div class="proj-card__tags">
+                <span class="tag">DRM</span><span class="tag">DLP</span><span class="tag">MDM</span><span class="tag">Backup</span>
+              </div>
+              <span class="proj-card__arrow">자세히 보기 →</span>
+            </div>
+          </a>
+
+          <a href="projects/p4-security-ir.html" class="proj-card fade-up">
+            <div class="proj-card__thumb proj-thumb-4"></div>
+            <div>
+              <div class="proj-card__title">
+                보안 침해사고 대응
+                <span class="proj-card__company">동화기업</span>
+              </div>
+              <p class="proj-card__period">2024.01 — 2024.03</p>
+              <p class="proj-card__desc">AD 마비로 인한 전사 공정 중단 → 외부 지원 없이 자체 대응으로 서비스 완전 복구. 인프라 이중화 및 접근제어 재구축.</p>
+              <div class="proj-card__metrics">
+                <span class="metric">자체 복구</span>
+                <span class="metric">물리 이중화</span>
+                <span class="metric">재발 방지</span>
+              </div>
+              <div class="proj-card__tags">
+                <span class="tag">보안 IR</span><span class="tag">AD</span><span class="tag">서버 접근제어</span>
+              </div>
+              <span class="proj-card__arrow">자세히 보기 →</span>
+            </div>
+          </a>
+
+          <a href="projects/p5-monitoring.html" class="proj-card fade-up">
+            <div class="proj-card__thumb proj-thumb-5"></div>
+            <div>
+              <div class="proj-card__title">
+                통합 모니터링 구축
+                <span class="proj-card__company">동화기업</span>
+              </div>
+              <p class="proj-card__period">2023.01 — 2023.06</p>
+              <p class="proj-card__desc">Zabbix + Grafana + CloudWatch 연동. IDC·AWS·Azure 멀티클라우드 통합 관제 대시보드 구축.</p>
+              <div class="proj-card__metrics">
+                <span class="metric">멀티클라우드</span>
+                <span class="metric">단일 대시보드</span>
+                <span class="metric">알람 자동화</span>
+              </div>
+              <div class="proj-card__tags">
+                <span class="tag">Zabbix</span><span class="tag">Grafana</span><span class="tag">CloudWatch</span>
+              </div>
+              <span class="proj-card__arrow">자세히 보기 →</span>
+            </div>
+          </a>
+
+          <a href="projects/p6-aws-dr.html" class="proj-card fade-up">
+            <div class="proj-card__thumb proj-thumb-6"></div>
+            <div>
+              <div class="proj-card__title">
+                AWS MGN 활용 DR 구성
+                <span class="proj-card__company">동화기업</span>
+              </div>
+              <p class="proj-card__period">2022.03 — 2022.08</p>
+              <p class="proj-card__desc">IDC-AWS 하이브리드 DR 환경 설계 및 구축. AWS MGN 기반 온프레미스 서버 복제 및 DR 절체 테스트.</p>
+              <div class="proj-card__metrics">
+                <span class="metric">6대 서버</span>
+                <span class="metric">DR 검증</span>
+                <span class="metric">BCP 확보</span>
+              </div>
+              <div class="proj-card__tags">
+                <span class="tag">AWS MGN</span><span class="tag">VPN</span><span class="tag">DR</span>
+              </div>
+              <span class="proj-card__arrow">자세히 보기 →</span>
+            </div>
+          </a>
+
+          <a href="projects/p7-s4hana.html" class="proj-card fade-up">
+            <div class="proj-card__thumb proj-thumb-7"></div>
+            <div>
+              <div class="proj-card__title">
+                S4HANA 고도화 AWS 인프라 지원
+                <span class="proj-card__company">동화기업</span>
+              </div>
+              <p class="proj-card__period">2022.03 — 현재</p>
+              <p class="proj-card__desc">SAP ECC → S/4HANA 고도화 프로젝트 AWS 인프라 지원. RDS Aurora PostgreSQL 운영 및 EC2 스냅샷 자동화.</p>
+              <div class="proj-card__metrics">
+                <span class="metric">ERP 전환</span>
+                <span class="metric">Aurora PG</span>
+                <span class="metric">자동화</span>
+              </div>
+              <div class="proj-card__tags">
+                <span class="tag">AWS RDS</span><span class="tag">Aurora</span><span class="tag">SAP</span>
+              </div>
+              <span class="proj-card__arrow">자세히 보기 →</span>
+            </div>
+          </a>
+
+          <a href="projects/p8-itsm.html" class="proj-card fade-up">
+            <div class="proj-card__thumb proj-thumb-8"></div>
+            <div>
+              <div class="proj-card__title">
+                ITSM AWS 인프라 아키텍처 구성
+                <span class="proj-card__company">동화기업</span>
+              </div>
+              <p class="proj-card__period">2022.03 — 현재</p>
+              <p class="proj-card__desc">신규 ITSM 시스템 AWS 인프라 설계. ECS Fargate + ALB + Aurora + CodePipeline 기반 CI/CD 환경 구축.</p>
+              <div class="proj-card__metrics">
+                <span class="metric">ECS Fargate</span>
+                <span class="metric">CI/CD</span>
+                <span class="metric">고가용성</span>
+              </div>
+              <div class="proj-card__tags">
+                <span class="tag">ECS</span><span class="tag">CodePipeline</span><span class="tag">Docker</span>
+              </div>
+              <span class="proj-card__arrow">자세히 보기 →</span>
+            </div>
+          </a>
+
+          <a href="projects/p9-directconnect.html" class="proj-card fade-up">
+            <div class="proj-card__thumb proj-thumb-9"></div>
+            <div>
+              <div class="proj-card__title">
+                AWS Direct Connect 전환
+                <span class="proj-card__company">동화기업</span>
+              </div>
+              <p class="proj-card__period">2022.03 — 현재</p>
+              <p class="proj-card__desc">Site-to-Site VPN → Direct Connect 무중단 전환. BGP·VGW 재구성으로 전용선 기반 안정적 네트워크 연결 확보.</p>
+              <div class="proj-card__metrics">
+                <span class="metric">전용선</span>
+                <span class="metric">BGP 이중화</span>
+                <span class="metric">무중단</span>
+              </div>
+              <div class="proj-card__tags">
+                <span class="tag">Direct Connect</span><span class="tag">BGP</span><span class="tag">VGW</span>
+              </div>
+              <span class="proj-card__arrow">자세히 보기 →</span>
+            </div>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- ── CONTACT ────────────────────────────────────── -->
+      <section class="section" id="contact">
+        <div class="section__header">
+          <p class="section__eyebrow">Contact</p>
+        </div>
+        <div class="contact__inner fade-up">
+          <p class="contact__greeting">// 함께 일하고 싶으신가요?</p>
+          <h2 class="contact__title">언제든지<br>연락 주세요</h2>
+          <p class="contact__desc">인프라·클라우드 운영과 관련된 기회라면 적극적으로 답변 드리겠습니다. 메일을 통해 편하게 연락해 주세요.</p>
+          <a href="mailto:Joy8256@naver.com" class="btn-email">
+            <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+            Joy8256@naver.com
+          </a>
+        </div>
+      </section>
+
+      <!-- ── FOOTER ──────────────────────────────────────── -->
+      <footer class="footer">
+        <div class="footer__inner">
+          <p class="footer__copy">© 2025 조영현. All rights reserved.</p>
+          <p class="footer__credit">Built with Claude Code</p>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

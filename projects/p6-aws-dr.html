@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWS MGN DR 구성 · 조영현 포트폴리오</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</head>
+<body class="project-page">
+
+  <nav class="nav scrolled" id="nav">
+    <a href="../index.html" class="nav__logo">YH.</a>
+    <a href="../index.html#projects" class="nav__back">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      프로젝트 목록
+    </a>
+  </nav>
+
+  <div class="project-hero">
+    <div class="container">
+      <a href="../index.html#projects" class="project-back">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        프로젝트 목록으로
+      </a>
+      <div class="project-meta-row">
+        <span class="project-meta-item is-company">동화기업</span>
+        <span class="project-meta-item">2022.03 — 2022.08</span>
+        <span class="project-meta-item">AWS / DR</span>
+      </div>
+      <h1 class="project-title-h1">AWS MGN 활용<br>IDC-AWS 하이브리드 DR 구성</h1>
+      <p class="project-role-text">역할: IDC-AWS 하이브리드 DR 환경 설계 및 구축 담당</p>
+    </div>
+  </div>
+
+  <div class="project-body">
+    <div class="container">
+
+      <div class="project-section">
+        <h2 class="project-section-title">프로젝트 개요</h2>
+        <p>동화기업 IDC의 온프레미스 서버를 AWS 클라우드로 복제하여, 재해 발생 시 빠르게 클라우드 환경으로 전환할 수 있는 DR(Disaster Recovery) 체계를 구축한 프로젝트입니다.</p>
+        <p>AWS MGN(Application Migration Service)을 활용해 온프레미스 서버를 실시간으로 AWS에 복제하고, Site-to-Site VPN으로 IDC와 AWS 간 네트워크를 연결했습니다. 총 6대(개발 2대 + 운영 4대) 서버에 대한 DR 환경을 구성하고 절체 테스트 시나리오를 수립·검증했습니다.</p>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">주요 수행 내용</h2>
+        <ul class="project-list">
+          <li><strong>DR 아키텍처 설계:</strong> IDC-AWS 하이브리드 구조 기반 DR 아키텍처 설계 및 전환 계획 수립</li>
+          <li><strong>AWS MGN 구성:</strong> AWS MGN 에이전트 설치 및 온프레미스 서버 실시간 복제 구성</li>
+          <li><strong>DR 환경 구성:</strong> 총 6대(개발 2 + 운영 4) 서버 DR 대상 구성</li>
+          <li><strong>네트워크 연결:</strong> Site-to-Site VPN 기반 IDC-AWS 간 네트워크 연결 구성</li>
+          <li><strong>보안 그룹 설계:</strong> DR 환경용 보안 그룹 및 라우팅 테이블 설계</li>
+          <li><strong>DR 절체 테스트:</strong> DR 절체 테스트 시나리오 수립 및 검증 수행, 복구 절차 표준화</li>
+          <li><strong>결과 문서화:</strong> DR 구성 및 테스트 결과 문서화, 운영 기준 정립</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">기술 스택</h2>
+        <table class="tech-table">
+          <tbody>
+            <tr><th>클라우드</th><td>AWS</td></tr>
+            <tr><th>마이그레이션</th><td>AWS MGN (Application Migration Service)</td></tr>
+            <tr><th>네트워크</th><td>Site-to-Site VPN</td></tr>
+            <tr><th>보안</th><td>WAF, GuardDuty, Inspector</td></tr>
+            <tr><th>서버 OS</th><td>Linux, Windows Server</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">핵심 성과</h2>
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <div class="achievement-card__metric">6대</div>
+            <div class="achievement-card__desc">개발 2대 + 운영 4대, 총 6대 서버 IDC-AWS 하이브리드 DR 환경 구성 완료</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-card__metric">BCP 확보</div>
+            <div class="achievement-card__desc">IDC-AWS 하이브리드 DR 환경 구성으로 비즈니스 연속성(BCP) 기반 마련</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-card__metric">복구 표준화</div>
+            <div class="achievement-card__desc">DR 절체 테스트 수행 및 복구 절차 표준화로 장애 대응 체계 수립</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-card__metric">무중단 복제</div>
+            <div class="achievement-card__desc">AWS MGN 활용으로 온프레미스 환경 무중단 실시간 복제 및 클라우드 전환 완료</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="project-nav-bar">
+      <a href="p5-monitoring.html">← 통합 모니터링 구축</a>
+      <a href="../index.html#projects" class="all-link">전체 목록</a>
+      <a href="p7-s4hana.html">S4HANA AWS 인프라 지원 →</a>
+    </div>
+  </div>
+
+  <footer class="footer proj-footer">
+    <p class="footer__copy">© 2025 조영현. All rights reserved.</p>
+    <p class="footer__credit">Hybrid Infrastructure &amp; Cloud Engineer</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

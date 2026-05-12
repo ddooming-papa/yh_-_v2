@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ITSM AWS 인프라 아키텍처 구성 · 조영현 포트폴리오</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</head>
+<body class="project-page">
+
+  <nav class="nav scrolled" id="nav">
+    <a href="../index.html" class="nav__logo">YH.</a>
+    <a href="../index.html#projects" class="nav__back">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      프로젝트 목록
+    </a>
+  </nav>
+
+  <div class="project-hero">
+    <div class="container">
+      <a href="../index.html#projects" class="project-back">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        프로젝트 목록으로
+      </a>
+      <div class="project-meta-row">
+        <span class="project-meta-item is-company">동화기업</span>
+        <span class="project-meta-item">2022.03 — 현재</span>
+        <span class="project-meta-item">AWS / 아키텍처 설계</span>
+      </div>
+      <h1 class="project-title-h1">ITSM 시스템<br>AWS 인프라 아키텍처 구성</h1>
+      <p class="project-role-text">역할: 신규 ITSM 시스템 AWS 인프라 설계 및 구축 담당</p>
+    </div>
+  </div>
+
+  <div class="project-body">
+    <div class="container">
+
+      <div class="project-section">
+        <h2 class="project-section-title">프로젝트 개요</h2>
+        <p>동화기업 신규 ITSM(IT Service Management) 시스템의 AWS 인프라를 설계하고 구축한 프로젝트입니다. 고가용성과 확장성을 고려한 멀티 레이어 구조를 설계하고, 개발/운영 환경을 분리하여 안정적인 배포 파이프라인을 구축했습니다.</p>
+        <p>ECS Fargate를 도입하여 컨테이너 기반 운영 환경의 인프라 관리 부담을 최소화하고, AWS CodePipeline 기반 CI/CD를 구성해 배포 프로세스를 자동화했습니다.</p>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">아키텍처 구성</h2>
+        <p>VPC 내 2개 가용 영역(AZ) 기반 고가용성 구조로 설계했습니다. 퍼블릭 서브넷에는 ALB(Application Load Balancer)를 배치하고, 프라이빗 서브넷에는 ECS 컨테이너 워크로드를 분산 배치했습니다. 데이터베이스 전용 프라이빗 서브넷에는 Aurora PostgreSQL Writer/Reader 이중화 구성을 적용했습니다.</p>
+        <ul class="project-list">
+          <li><strong>인프라 아키텍처:</strong> ECS/EC2, ALB, Aurora PostgreSQL, S3, Amplify, CodePipeline 활용</li>
+          <li><strong>고가용성 구조:</strong> 2개 AZ 기반 ECS 컨테이너 분산, Aurora Read Replica 구성</li>
+          <li><strong>환경 분리:</strong> DEV / PRD 환경 분리 구성 및 배포 파이프라인 독립 구축</li>
+          <li><strong>CI/CD 자동화:</strong> CodePipeline 기반 Docker 이미지 빌드·ECS 배포 자동화</li>
+          <li><strong>컨테이너 환경:</strong> ECS EC2 및 Fargate 기반 컨테이너 운영 환경 구축</li>
+          <li><strong>Docker 표준화:</strong> Docker 이미지 빌드·배포 프로세스 표준화</li>
+          <li><strong>보안:</strong> WAF, Ahnlab EPP/CPP/MDS/EDR-V3, 서버 접근제어 적용</li>
+          <li><strong>모니터링:</strong> CloudWatch, X-Ray 기반 애플리케이션 성능 모니터링</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">기술 스택</h2>
+        <table class="tech-table">
+          <tbody>
+            <tr><th>클라우드</th><td>AWS</td></tr>
+            <tr><th>컨테이너</th><td>Docker, ECS EC2, ECS Fargate</td></tr>
+            <tr><th>CI/CD</th><td>AWS CodePipeline</td></tr>
+            <tr><th>DB</th><td>RDS Aurora PostgreSQL (Writer + Reader)</td></tr>
+            <tr><th>네트워크</th><td>ALB, VPC (Multi-AZ)</td></tr>
+            <tr><th>스토리지/CDN</th><td>S3, Amplify</td></tr>
+            <tr><th>보안</th><td>WAF, Ahnlab EPP-CPP-MDS-EDR-V3, 서버접근제어</td></tr>
+            <tr><th>모니터링</th><td>CloudWatch, X-Ray</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">핵심 성과</h2>
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <div class="achievement-card__metric">고가용성</div>
+            <div class="achievement-card__desc">Multi-AZ ECS 분산 + Aurora Read Replica 구성으로 ITSM 서비스 고가용성 아키텍처 완성</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-card__metric">CI/CD</div>
+            <div class="achievement-card__desc">CodePipeline 기반 CI/CD 자동화로 배포 프로세스 표준화 및 운영 효율화</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-card__metric">Fargate</div>
+            <div class="achievement-card__desc">ECS Fargate 도입으로 인프라 관리 부담 절감 및 컨테이너 환경 안정화</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-card__metric">환경 분리</div>
+            <div class="achievement-card__desc">DEV/PRD 독립 환경 구성으로 개발-운영 간 안전한 배포 파이프라인 확보</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="project-nav-bar">
+      <a href="p7-s4hana.html">← S4HANA AWS 인프라 지원</a>
+      <a href="../index.html#projects" class="all-link">전체 목록</a>
+      <a href="p9-directconnect.html">AWS Direct Connect 전환 →</a>
+    </div>
+  </div>
+
+  <footer class="footer proj-footer">
+    <p class="footer__copy">© 2025 조영현. All rights reserved.</p>
+    <p class="footer__credit">Hybrid Infrastructure &amp; Cloud Engineer</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

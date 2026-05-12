@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KT 코넷망 라우터 대개체 · 조영현 포트폴리오</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</head>
+<body class="project-page">
+
+  <nav class="nav scrolled" id="nav">
+    <a href="../index.html" class="nav__logo">YH.</a>
+    <a href="../index.html#projects" class="nav__back">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      프로젝트 목록
+    </a>
+  </nav>
+
+  <div class="project-hero">
+    <div class="container">
+      <a href="../index.html#projects" class="project-back">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        프로젝트 목록으로
+      </a>
+      <div class="project-meta-row">
+        <span class="project-meta-item is-company">아이크래프트</span>
+        <span class="project-meta-item">2014.08 — 2016.01</span>
+        <span class="project-meta-item">네트워크</span>
+      </div>
+      <h1 class="project-title-h1">KT 코넷망 국내외 사업장<br>주중계 라우터 대개체</h1>
+      <p class="project-role-text">역할: 라우터 대개체 작업을 위한 사전 작업 및 본작업 수행</p>
+    </div>
+  </div>
+
+  <div class="project-body">
+    <div class="container">
+
+      <div class="project-section">
+        <h2 class="project-section-title">프로젝트 개요</h2>
+        <p>KT 코넷망(Backbone Network) 내 노후 L3 라우터를 교체하는 대규모 인프라 전환 프로젝트입니다. 기존 Cisco 저사양 장비를 Juniper 고사양 T-Series 장비로 교체하며, 국내외 총 10개 주요 국소에 대해 순차적으로 무중단 전환을 수행했습니다.</p>
+        <p>단순 장비 교체가 아닌, ISIS/BGP/OSPF 라우팅 프로토콜 기반의 트래픽 우회 및 단계적 절체를 통해 서비스 중단 없이 전환을 완료하는 고난도 작업이었습니다.</p>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">주요 수행 내용</h2>
+        <ul class="project-list">
+          <li><strong>L3 라우터 벤더 전환:</strong> 기존 Cisco → 신규 Juniper T-Series 장비로 교체</li>
+          <li><strong>사전 작업 문서화:</strong> 설정도, 회선도, 체크리스트, 작업계획서, 시공자시행서 작성 및 검증</li>
+          <li><strong>Config 사전 검증:</strong> 현장 투입 전 Juniper 설정 파일 작성 및 시뮬레이션 검증</li>
+          <li><strong>트래픽 우회 수행:</strong> ISIS/BGP/OSPF 기반 트래픽 우회 경로 설정 및 단계적 절체</li>
+          <li><strong>무중단 전환:</strong> 라우팅 재연동을 통한 서비스 중단 없는 장비 전환</li>
+          <li><strong>현장 기술 지원:</strong> 회선 테스트, Config 업로드, Trouble-Shooting 수행</li>
+          <li><strong>대상 국소:</strong> 혜화, 구로, 강북, 양재, 거제, 익산, 수원, 모란, 중국프리미엄, 코넷 POP 등</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">기술 스택</h2>
+        <table class="tech-table">
+          <tbody>
+            <tr><th>라우터</th><td>Juniper T-Series (신규), Cisco (기존)</td></tr>
+            <tr><th>라우팅 프로토콜</th><td>BGP, OSPF, ISIS</td></tr>
+            <tr><th>구성 방식</th><td>Active/Standby 이중화 구조</td></tr>
+            <tr><th>네트워크</th><td>L3 백본 라우터, 업링크 200Gbps</td></tr>
+            <tr><th>문서</th><td>설정도, 회선도, 선번장, Config 파일</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">핵심 성과</h2>
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <div class="achievement-card__metric">10개소</div>
+            <div class="achievement-card__desc">국내외 주요 국소 대개체 작업 완료 (혜화, 구로, 강북, 양재, 거제, 익산, 수원, 모란, 중국프리미엄, 코넷 POP)</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-card__metric">200Gbps</div>
+            <div class="achievement-card__desc">업링크 트래픽 처리 용량 평균 200Gbps 수준으로 증설, 트래픽 처리 능력 대폭 확대</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-card__metric">무중단</div>
+            <div class="achievement-card__desc">사전 Config 검증 및 단계적 절체로 장애 발생 없이 전 국소 트래픽 전환 완료</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-card__metric">이중화</div>
+            <div class="achievement-card__desc">Active/Standby 이중화 구조 기반 운영으로 장애 발생 시 서비스 영향 최소화 체계 구축</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="project-nav-bar">
+      <span style="color:var(--text-muted);font-size:0.82rem;">← 이전 프로젝트 없음</span>
+      <a href="../index.html#projects" class="all-link">전체 목록</a>
+      <a href="p2-ksm-infra.html">KSM 그룹 IT 인프라 구축·운영 →</a>
+    </div>
+  </div>
+
+  <footer class="footer proj-footer">
+    <p class="footer__copy">© 2025 조영현. All rights reserved.</p>
+    <p class="footer__credit">Hybrid Infrastructure &amp; Cloud Engineer</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

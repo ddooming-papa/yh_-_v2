@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWS Direct Connect 전환 · 조영현 포트폴리오</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</head>
+<body class="project-page">
+
+  <nav class="nav scrolled" id="nav">
+    <a href="../index.html" class="nav__logo">YH.</a>
+    <a href="../index.html#projects" class="nav__back">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      프로젝트 목록
+    </a>
+  </nav>
+
+  <div class="project-hero">
+    <div class="container">
+      <a href="../index.html#projects" class="project-back">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        프로젝트 목록으로
+      </a>
+      <div class="project-meta-row">
+        <span class="project-meta-item is-company">동화기업</span>
+        <span class="project-meta-item">2022.03 — 현재</span>
+        <span class="project-meta-item">AWS / 네트워크</span>
+      </div>
+      <h1 class="project-title-h1">AWS Direct Connect<br>전환 및 네트워크 이중화</h1>
+      <p class="project-role-text">역할: IDC-AWS 간 네트워크 Direct Connect 전환 담당</p>
+    </div>
+  </div>
+
+  <div class="project-body">
+    <div class="container">
+
+      <div class="project-section">
+        <h2 class="project-section-title">프로젝트 개요</h2>
+        <p>기존 Site-to-Site VPN으로 연결되어 있던 IDC-AWS 간 네트워크를 AWS Direct Connect(전용선) 기반으로 전환한 프로젝트입니다.</p>
+        <p>VPN 방식 대비 안정적인 대역폭과 낮은 레이턴시가 필요해짐에 따라 DX 전환을 추진했으며, 서비스 중단 없는 무중단 전환을 위해 단계적 이중화 전환 절차를 수립하고 수행했습니다. VGW·BGP 재구성을 통한 라우팅 최적화와 Failover 검증까지 완료했습니다.</p>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">주요 수행 내용</h2>
+        <ul class="project-list">
+          <li><strong>DX 전환 아키텍처 설계:</strong> 기존 Site-to-Site VPN에서 Direct Connect로 전환하는 아키텍처 설계</li>
+          <li><strong>무중단 전환 절차 수립:</strong> 서비스 영향 최소화를 위한 이중화 기반 단계적 전환 절차 수립</li>
+          <li><strong>VGW·BGP 재구성:</strong> Virtual Private Gateway 및 BGP 재구성으로 라우팅 테이블 전환</li>
+          <li><strong>전용선 네트워크 연결:</strong> IDC-AWS 간 전용선 기반 안정적 네트워크 연결 구성</li>
+          <li><strong>성능 및 안정성 검증:</strong> 전환 후 네트워크 성능 및 안정성 테스트 수행</li>
+          <li><strong>Failover 검증:</strong> 장애 시나리오 기반 Failover 검증으로 이중화 구조 확인</li>
+          <li><strong>모니터링:</strong> CloudWatch, CloudTrail 기반 전환 전후 네트워크 상태 모니터링</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">전환 전후 비교</h2>
+        <table class="tech-table">
+          <tbody>
+            <tr><th>전환 전</th><td>Site-to-Site VPN (인터넷 기반, 대역폭 불안정, 레이턴시 변동)</td></tr>
+            <tr><th>전환 후</th><td>AWS Direct Connect (전용선 기반, 안정적 대역폭, 낮은 레이턴시, BGP 이중화)</td></tr>
+            <tr><th>전환 방식</th><td>서비스 중단 없는 무중단 단계적 전환 (기존 VPN 유지 중 DX 추가 → 트래픽 전환 → VPN 제거)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">기술 스택</h2>
+        <table class="tech-table">
+          <tbody>
+            <tr><th>클라우드</th><td>AWS</td></tr>
+            <tr><th>네트워크</th><td>Direct Connect, BGP, VGW (Virtual Private Gateway)</td></tr>
+            <tr><th>기존 네트워크</th><td>Site-to-Site VPN (전환 전)</td></tr>
+            <tr><th>모니터링</th><td>CloudWatch, CloudTrail</td></tr>
+            <tr><th>보안</th><td>WAF, GuardDuty</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="project-section">
+        <h2 class="project-section-title">핵심 성과</h2>
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <div class="achievement-card__metric">전용선</div>
+            <div class="achievement-card__desc">DX 전환 완료로 클라우드 네트워크 안정성 및 전용선 기반 안정적 대역폭 확보</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-card__metric">BGP 이중화</div>
+            <div class="achievement-card__desc">BGP 재구성을 통한 라우팅 최적화 및 네트워크 이중화로 고가용성 네트워크 구현</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-card__metric">무중단</div>
+            <div class="achievement-card__desc">무중단 전환 절차 수립 및 수행으로 서비스 영향 없이 VPN → DX 전환 완료</div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-card__metric">Failover</div>
+            <div class="achievement-card__desc">장애 시나리오 기반 Failover 검증 완료, 네트워크 이중화 체계 확인</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="project-nav-bar">
+      <a href="p8-itsm.html">← ITSM AWS 인프라 아키텍처</a>
+      <a href="../index.html#projects" class="all-link">전체 목록</a>
+      <span style="color:var(--text-muted);font-size:0.82rem;">다음 프로젝트 없음 →</span>
+    </div>
+  </div>
+
+  <footer class="footer proj-footer">
+    <p class="footer__copy">© 2025 조영현. All rights reserved.</p>
+    <p class="footer__credit">Hybrid Infrastructure &amp; Cloud Engineer</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
