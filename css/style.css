@@ -643,7 +643,7 @@ ul { list-style: none; }
 /* ══════════════════════════════════════════════════════════
    CONTACT
 ══════════════════════════════════════════════════════════ */
-.contact__inner { max-width: 560px; }
+.contact__inner { max-width: 800px; }
 
 .contact__greeting {
   font-size: 0.85rem;
