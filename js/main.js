@@ -85,3 +85,21 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     }
   });
 });
+
+
+/* ── [v1 MERGE] TYPED.JS INTRO ───────────────────────── */
+if (document.getElementById('typed-intro') && typeof Typed !== 'undefined') {
+  new Typed('#typed-intro', {
+      strings: [
+            '클라우드와 온프레미스를 아우르는 경험을 기반으로\n안정적이면서도 혁신적인 IT 인프라를 만들어 가겠습니다.'
+                ],
+                    typeSpeed: 30,
+                        backSpeed: 0,
+                            loop: false,
+                                showCursor: true,
+                                    cursorChar: '|',
+                                        onComplete: function(self) {
+                                              self.cursor.style.display = 'none';
+                                                  }
+                                                    });
+                                                    }
